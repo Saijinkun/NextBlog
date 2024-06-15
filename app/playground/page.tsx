@@ -6,6 +6,10 @@ export default function PlayGround() {
 
 
   return (
-    <main>PlayGround</main>
+    <main className='relative'>
+      <section>
+
+      </section>
+    </main>
   )
 }
