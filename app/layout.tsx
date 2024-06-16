@@ -20,9 +20,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body >
         <Provider>
-          <div className="flex-1 ml-64">
+          <div className="">
             <Navbar />
-            <main className="pt-16 p-4">
+            <main className="">
               {children}
             </main>
           </div>

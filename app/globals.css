@@ -38,8 +38,9 @@
     }
     body {
       @apply bg-background text-foreground;
-       transition: background-color 0.5s, color 0.5s;
+      transition: background-color 0.5s ease-in-out, color 0.9s ease-in-out;
     }
+    
 
   .light{
     --background: 0 0% 100%;

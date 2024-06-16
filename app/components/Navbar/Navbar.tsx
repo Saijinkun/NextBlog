@@ -1,13 +1,16 @@
 // components/Navbar.js
 import React from 'react';
+import { ModeToggle } from '../ModeToggle';
 
 const Navbar = () => {
     return (
-        <header className="fixed top-0 left-64 right-0 bg-gray-900 text-white p-4 z-10">
-            <div className="container mx-auto">
-                <h1 className="text-xl">My Application</h1>
+        <header className="fixed top-0 w-full bg-secondary p-4 z-10">
+            <div className="flex gap-1 justify-between items-center">
+                <h1 className="text-xl font-bold text-primary">My Application</h1>
+                <ModeToggle />
             </div>
         </header>
+
     );
 };
 
