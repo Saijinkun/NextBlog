@@ -52,6 +52,8 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        scrollbarThumb: 'hsl(var(--scrollbar-thumb-color))',
+        scrollbarTrack: 'hsl(var(--scrollbar-track-color))',
       },
       borderRadius: {
         lg: "var(--radius)",
