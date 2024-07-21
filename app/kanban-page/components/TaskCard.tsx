@@ -39,7 +39,7 @@ export default function TaskCard({ task, deleteTask, updateTask }: Props) {
     }
 
     if (isDragging) {
-        return <Card ref={setNodeRef} style={style} className='border-2 border-primary h-[120px] min-h-[120px] m-4 bg-secondary opacity-30' />
+        return <Card ref={setNodeRef} style={style} className=' h-[120px] min-h-[120px] m-4 bg-secondary opacity-30' />
     }
     if (editMode) {
         return (

@@ -41,10 +41,10 @@ export default function ColumnContainer(props: Props) {
     }, [tasks])
 
     if (isDragging) {
-        return <Card ref={setNodeRef} style={style} className="h-[85dvh] w-[400px] border-primary"></Card>
+        return <Card ref={setNodeRef} style={style} className="h-[85dvh] w-[400px] border-transparent bg-primary-foreground opacity-25"></Card>
     }
 
-  
+
     return (
         <Card
             ref={setNodeRef}
