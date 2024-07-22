@@ -32,9 +32,8 @@ export default function KanBanBoard() {
     useEffect(() => {
         setIsClient(true);
     }, []);
-    console.log(tasks)
     return (
-        <ScrollArea className='overflow-y-hidden pt-24 px-4 h-screen snap-x snap-mandatory m-auto flex  w-full items-start'>
+        <ScrollArea className='overflow-y-hidden snap-x snap-mandatory m-auto flex items-start h-f'>
             <DndContext
                 sensors={sensors}
                 onDragStart={onDragStart}

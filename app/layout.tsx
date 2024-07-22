@@ -3,6 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Provider from "./providers/Provider";
 import Navbar from "./components/Navbar/Navbar";
+import Header from "./components/layout/Header";
+import { cn } from "@/lib/utils";
+import Sidebar from "./components/layout/Sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +22,11 @@ export default function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <body>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+        )}
+      >
         <Provider>
           {children}
         </Provider>
