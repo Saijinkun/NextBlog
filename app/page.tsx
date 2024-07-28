@@ -7,7 +7,7 @@ import Hero from "./components/layout/Hero";
 
 export default function HomePage() {
   return (
-    <Container hasHeader hasSidebar>
+    <Container>
       <Hero />
     </Container>
   );

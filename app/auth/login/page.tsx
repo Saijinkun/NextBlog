@@ -1,14 +1,11 @@
-
-
 import Container from '@/app/components/Container'
 import React from 'react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
-import LoginForm from '@/app/components/auth/LoginForm'
 import Link from 'next/link'
-import { Image } from '@radix-ui/react-avatar'
+import Image from 'next/image'
 
 export default function LoginPage() {
     return (
@@ -61,7 +58,7 @@ export default function LoginPage() {
                 </div>
                 <div className="hidden bg-muted lg:block">
                     <Image
-                        src="images/nature.jpg"
+                        src="/images/nature.jpg"
                         alt="Image"
                         width="1920"
                         height="1080"

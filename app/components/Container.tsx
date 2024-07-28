@@ -13,7 +13,7 @@ type Props = {
 
 export default function Container({ hasHeader, hasSidebar, children, className }: Props) {
     return (
-        <main className={cn(`w-full h-full px-3 ${hasHeader && 'pt-24'} ${hasSidebar && 'pl-96'} ${className}`)}>
+        <main className={cn(`w-full h-full p-2 px-3 ${hasHeader && 'pt-24'} ${hasSidebar && 'pl-96'} ${className}`)}>
             {children}
         </main>
     )

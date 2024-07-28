@@ -4,10 +4,10 @@ import QueryProvider from './context/QueryProvider'
 export default function Provider({ children }: { children: React.ReactNode }) {
 
     return (
-        <QueryProvider>
-            <ThemeProvider>
+        <ThemeProvider>
+            <QueryProvider>
                 {children}
-            </ThemeProvider>
-        </QueryProvider>
+            </QueryProvider>
+        </ThemeProvider>
     )
 }

@@ -49,9 +49,9 @@ export default function ColumnContainer(props: Props) {
         <Card
             ref={setNodeRef}
             style={style}
-            className='snap-center h-[85dvh] w-[400px]'>
-            <CardHeader {...attributes}  {...listeners}>
-                <div className="bg-secondary m-2 p-3 rounded-sm flex justify-between items-center cursor-move">
+            className='snap-center h-full w-[400px]'>
+            <CardHeader className="p-1" {...attributes}  {...listeners}>
+                <div className="bg-secondary p-3 rounded-sm flex justify-between items-center cursor-move">
                     <div className="flex items-center gap-2 cursor-pointer"
                         onClick={() => setEditMode(true)}
                     >
@@ -73,13 +73,18 @@ export default function ColumnContainer(props: Props) {
                             />
                         )}
                     </div>
-                    <Button onClick={() => { deleteColumn(column.id) }} variant="ghost" size="icon">
-                        <Trash />
-                    </Button>
+                    <div className="flex items-center gap-1">
+                        <Button onClick={() => { createTask(column.id) }} variant="ghost" size="icon">
+                            <PlusIcon />
+                        </Button>
+                        <Button onClick={() => { deleteColumn(column.id) }} variant="ghost" size="icon">
+                            <Trash />
+                        </Button>
+                    </div>
                 </div>
             </CardHeader>
-            <CardContent className="p-1 mb-3">
-                <ScrollArea className="h-[66vh] w-full">
+            <CardContent className="p-1">
+                <ScrollArea className="h-[75vh] w-full">
                     <SortableContext items={tasksIds}>
                         {tasks.map((task) => {
                             return (
@@ -90,9 +95,7 @@ export default function ColumnContainer(props: Props) {
                 </ScrollArea>
             </CardContent>
             <CardFooter className="">
-                <Button className="w-full h-full" onClick={() => { createTask(column.id) }}>
-                    <PlusIcon /> Add Task
-                </Button>
+
             </CardFooter>
         </Card>
     )

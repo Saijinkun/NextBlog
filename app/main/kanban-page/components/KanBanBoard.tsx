@@ -33,15 +33,15 @@ export default function KanBanBoard() {
         setIsClient(true);
     }, []);
     return (
-        <ScrollArea className='overflow-y-hidden snap-x snap-mandatory m-auto flex items-start h-f'>
+        <ScrollArea className='overflow-y-hidden snap-x snap-mandatory m-auto flex items-start h-full'>
             <DndContext
                 sensors={sensors}
                 onDragStart={onDragStart}
                 onDragEnd={onDragEnd}
                 onDragOver={onDragOver}
             >
-                <section className='m-auto flex gap-4'>
-                    <div className='flex gap-4'>
+                <section className='m-auto flex gap-4 h-full'>
+                    <div className='flex gap-4 h-full'>
                         <SortableContext items={columnsIds}>
                             {columns.map((column, index) => (
                                 <ColumnContainer
